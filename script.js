@@ -30,20 +30,23 @@ $(function(){
   $('.formDiv').on('change', 'select', function(){
       if(this.value){
         $('#Calculate').click(function(){
-          var FristLanguage = $('#FristLanguage').find(":selected").val();
-          var SecondLanguage = $('#SecondLanguage').find(":selected").val();
-          var English = $('#English').find(":selected").val();
-          var Hindi = $('#Hindi').find(":selected").val();
-          var SocialScience = $('#SocialScience').find(":selected").val();
-          var Physics = $('#Physics').find(":selected").val();
-          var Chemistry = $('#Chemistry').find(":selected").val();
-          var Biology = $('#Biology').find(":selected").val();
-          var Mathematics = $('#Mathematics').find(":selected").val();
-          var InformationTechnology = $('#InformationTechnology').find(":selected").val();
+          let FristLanguage = $('#FristLanguage').find(":selected").val();
+          let SecondLanguage = $('#SecondLanguage').find(":selected").val();
+          let English = $('#English').find(":selected").val();
+          let Hindi = $('#Hindi').find(":selected").val();
+          let SocialScience = $('#SocialScience').find(":selected").val();
+          let Physics = $('#Physics').find(":selected").val();
+          let Chemistry = $('#Chemistry').find(":selected").val();
+          let Biology = $('#Biology').find(":selected").val();
+          let Mathematics = $('#Mathematics').find(":selected").val();
+          let InformationTechnology = $('#InformationTechnology').find(":selected").val();
+          let totel=parseInt(FristLanguage)+parseInt(SecondLanguage)+parseInt(English)+parseInt(Hindi)+parseInt(SocialScience)+parseInt(Physics)+parseInt(Chemistry)+parseInt(Biology)+parseInt(Mathematics)+parseInt(InformationTechnology)
+          let percentage=totel*1.11
           if(FristLanguage>0 && SecondLanguage>0 && English>0 && Hindi>0 && SocialScience>0 && Physics>0 && Chemistry>0 && Biology>0 && Mathematics>0 && InformationTechnology>0){
-            document.getElementById("resutl").innerHTML = "True";
+            document.getElementById("result-text").innerHTML = "You Got " +percentage +"%"
+            $('#PercentageScreen').modal('show');
            }else{
-            document.getElementById("resutl").innerHTML = "";
+            document.getElementById("result-text").innerHTML = "";
            }
          });
           

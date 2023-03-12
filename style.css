@@ -33,4 +33,7 @@ body::-webkit-scrollbar {
 .error {
   color: red;
 }
+#result-text{
+  color: green;
+}
 
