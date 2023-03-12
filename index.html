@@ -41,6 +41,15 @@
                       Print
                     </a>
                   </li>
+                  <li>
+                    <a href="https://github.com/Azharkoivila/SSLC-Kerala-State-Percentage-Calculator/blob/master/README.md" class="nav-link text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+                        <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
+                      </svg>
+                      <br>
+                      For Pc
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -57,15 +66,15 @@
       </div>
 
       <div class="modal-body p-5 pt-0">
-        <form class="">
-          <div>
+        <form onsubmit="return false" id="mypform">
+          <div class="formDiv">
             <table class="table  table-dark">
               <tbody >
                 <tr>
                   <td>Frist Language</td>
                   <td>
-                    <select class="form-select " aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="fl" id="FristLanguage" class="form-select " aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -79,8 +88,8 @@
                 <tr>
                   <td>Second Language</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="sl" id="SecondLanguage" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -94,8 +103,8 @@
                 <tr>
                   <td>English</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="en" id="English" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -109,8 +118,8 @@
                 <tr>
                   <td>Hindi</td>
                   <td>
-                    <select class="form-select " aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="hi" id="Hindi" class="form-select " aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -124,8 +133,8 @@
                 <tr>
                   <td>Social Science</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="ss" id="SocialScience" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -139,8 +148,8 @@
                 <tr>
                   <td>Physics</td>
                   <td>
-                    <select class="form-select " aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="ph" id="Physics" class="form-select " aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -154,8 +163,8 @@
                 <tr>
                   <td>Chemistry</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="ch" id="Chemistry" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -169,8 +178,8 @@
                 <tr>
                   <td>Biology</td>
                   <td>
-                    <select class="form-select " aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="bi" id="Biology" class="form-select " aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -184,8 +193,8 @@
                 <tr>
                   <td>Mathematics</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="ma" id="Mathematics" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -199,8 +208,8 @@
                 <tr>
                   <td>Information Technology</td>
                   <td>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>select</option>
+                    <select name="it" id="InformationTechnology" class="form-select" aria-label="Default select example">
+                      <option value="">Choose</option>
                       <option value="1">A+</option>
                       <option value="2">A</option>
                       <option value="3">B+</option>
@@ -213,7 +222,8 @@
                 </tr>
               </tbody>
             </table>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Calculate</button>
+            <h1 id="resutl"></h1>
+          <button id="Calculate" class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Calculate</button>
         </form>
       </div>
     </div>
@@ -236,6 +246,8 @@
 </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>     
 </body>
 </html>
